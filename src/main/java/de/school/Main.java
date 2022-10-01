@@ -36,7 +36,7 @@ public class Main {
 			+ care;
 		double net = Double.parseDouble(round(gross - sum));
 
-		System.out.print("\t\t");
+		System.out.print("\033[1m\t\t");
 		printAmount('*', starsAmount);
 		printWithStarsFormat("Dieses Programm berechnet");
 		printWithStarsFormat("das Netto-Gehalt abhängig");
@@ -52,9 +52,9 @@ public class Main {
 		System.out.print("\t\t");
 		printAmount('*', starsAmount);
 		print("");
-		print("");
+		print("\033[0m");
 		printAmount('-', subAmount);
-		print("");
+		print("\033[1m");
 		print("");
 		printAmount('-', subAmount);
 		printWithSubFormat("Brutto Gehalt", gross);
