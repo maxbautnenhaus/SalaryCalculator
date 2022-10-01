@@ -67,7 +67,7 @@ public class Main {
 		printWithSubFormat("Arbeitslosenversicherung", unemployment);
 		printWithSubFormat("Pflegeversicherung", care);
 		printAmount('-', subAmount);
-		printWithSubFormat("Summe Abzüge", round(sum));
+		printWithSubFormat("Summe Abzüge", Double.parseDouble(round(sum)));
 		printAmount('-', subAmount);
 		printWithSubFormat("Gehalt Netto", net);
 		printAmount('-', subAmount);
